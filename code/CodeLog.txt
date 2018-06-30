@@ -1,0 +1,103 @@
+/*-----------------Day 1 Accomplishment----------------*/
+1. Boiler plate code for window creation.
+2. Created a windows struct for easy handling
+3. Added support for multiple windows
+4. Added a callback render functionality
+
+/*-----------------Day 2 Accomplishment----------------*/
+1. Allows the API user to change the SERENITY_MAX_WINDOW define
+2. Added stub render function, so program doesn't crash when user failed to provide his own render function
+3. Global Return codes
+4. Resizable windows
+5. Custom allocator
+
+
+/*-----------------Day 3 Accomplishment----------------*/
+1. Moved declarations to header file
+2. Got temporary assertions working (directly to stdout)
+3. Add a simple logging system (directly to stdout)
+4. Commented the functions
+5. Clean Up
+
+/*-----------------Day 4 Accomplishment----------------*/
+1. cpp to c
+2. Structural Changes to SerenityDestroyWindow (made internal function called SerenityDeallocateWindowResources).
+3. Fixed DestoryWindow bug. DestoryWindow MSDN does more than just send DestroyMessage
+4. Implemented Keyboard input
+5. Tied ALT to the standard way of handling keyboard input
+6. Keyboard Input Implemented Completely
+7. Implemented mouse move
+
+/*-----------------Day 5 Accomplishment----------------*/
+1. Implemented Rest of mouse input
+2. Implemented Timing function
+3. Implemented Performance Counters
+4. MemSet8 16 32 64 vairties
+5. Init git
+
+/*-----------------Day 6 Accomplishment----------------*/
+1. Changed structure a little
+2. Controller input done
+3. Added way for my layer to handle ALT F4 and F5 messages
+4. Added MemCopy
+5. ClassName is now same as window name
+
+/*-----------------Day 7 Accomplishment----------------*/
+1. Changed MemoryAlloc function
+2. Window Specific Updates
+3. Changed Rendering Callback API
+4. 
+
+/*-----------------Day 8 Accomplishment----------------*/
+1. Overhualed the whole system for multithreading support
+
+/*-----------------Day 9 Accomplishment----------------*/
+1. Reverted input system
+2. Add controller api
+3. Changed PK to SR (Serenity Virtual Keys) and made htem enum
+4. XInputSetState (ie Vibration)
+5. Fullscreen option
+
+/*-----------------Day 10 Accomplishment----------------*/
+1. Added no console option
+2. Added local SerenityLog File
+3. GetLastError errors handled
+
+/*-----------------Day 11 Accomplishment----------------*/
+1. General Performace Measring program
+
+/*-----------------Day 1 TODOs----------------*/
+comleted
+
+/*-----------------Day 2 TODOs----------------*/
+complete
+
+/*-----------------Day 3 TODOs----------------*/
+complete
+
+/*-----------------Day 4 TODOs----------------*/
+complete
+
+/*-----------------Day 5 TODOs----------------*/
+complete 
+
+/*-----------------Day 6 TODOs----------------*/
+1. Clean Up
+2. List all possible locations for thread unsafe operations
+
+/*-----------------Day 7 TODOs----------------*/
+1. Threading
+2. Sound 
+3. OpenGL support
+4. Direct3D support
+5. Allow user to define min max width and height.
+6. If Max/Min width or height is reached maybe just stop resizing don't or give errors 
+7. Raw Input and Mouse with Multiple Button Support
+8. Replace malloc and int and FILE and such
+9. Make sure it is intuitve for the developer
+
+/*-----------------Day 10 TODOs----------------*/
+1. Static Memory option, like no dynamic number of windows but a lot more efficient
+2. Allow logging to be avoided in release builds
+3. Make performance measurer thread safe (by making the perf stack a part of the context)
+4. Also find a good way to measure percentages like Update is 20% of main etc...

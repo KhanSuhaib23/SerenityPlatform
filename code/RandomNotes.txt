@@ -1,0 +1,30 @@
+So in rendering the part of my platform takes 0.11ms
+And total takes around 1.7ms
+
+My memset takes 9 times as much time as c memset
+
+Now with varities of MemSet i am only 1.5 times slower. 
+They prbably use assembly to make it faster
+
+
+windowHandle using 
+internal int32 __SerenityGetWindowIndexFromHandle(HWND windowHandle)
+probably has cache misses
+
+Performance Avg Time 0.000075ms Called n times.
+
+again SOA can help see even if it matters
+
+porbably doesn't messages that take place 1 per frame dont even go there.
+and the time is same enough
+
+In the callback width and height are used after the bmi header so see if cache locality can help
+prolly not cause it is WM_SIZE doesn;t happen often enouygh
+
+Get Free Slot has same problem as IndexFromHandle SOA will help but prolly not called often enough to warrant a code change
+
+Serenity Input Update using my own memset could and should be imprived to be better than c memset
+
+Application Should Close same as IndexFrtomHandle SOA may solve called more often so can be helpful (0.000023 before SOA)
+
+App should close does benefit from SOA (by like 0.000006ms) so??????
